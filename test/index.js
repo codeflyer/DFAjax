@@ -7,6 +7,14 @@ global.ROOT_PATH_FOR_TEST = rootPath;
 
 require('should');
 
-var log4js = require('log4js');
-var logger = log4js.getLogger('main');
-logger.setLevel('TRACE');
+const dfAjax = require('../lib/index')
+dfAjax.setLogger({
+  trace: () => {
+  },
+  info: () => {
+  },
+  debug: () => {
+  },
+  error: () => {
+  },
+})

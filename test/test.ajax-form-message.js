@@ -6,7 +6,7 @@ describe('ajax-message: AjaxFormMessage', function() {
     ajaxFormMessage.should.have.property('result', 0);
     ajaxFormMessage.should.have.property('message', '');
     ajaxFormMessage.should.have.property('value', {});
-    ajaxFormMessage.should.have.property('errors', []);
+    ajaxFormMessage.should.have.property('errors', {});
     ajaxFormMessage.should.have.property('errorCount', 0);
     done();
   });
